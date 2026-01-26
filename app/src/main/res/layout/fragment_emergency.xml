@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvEmergencyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Assistance"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- EditText to enter emergency number -->
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter emergency number"
+        android:inputType="phone"
+        android:layout_below="@id/tvEmergencyTitle"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Button to save number -->
+    <Button
+        android:id="@+id/btnSaveNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Number"
+        android:layout_below="@id/etNumber"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Button to send emergency message -->
+    <Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Emergency Message"
+        android:layout_below="@id/btnSaveNumber"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Instruction Text at the bottom -->
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By shaking the phone, call and SMS will be sent automatically"
+        android:textSize="16sp"
+        android:layout_below="@id/btnSendMsg"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
