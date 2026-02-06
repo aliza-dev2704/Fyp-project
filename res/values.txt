@@ -1,8 +1,0 @@
-"color.xml" in values folder
-
-
-      CODE:
-<resources>
-    <color name="teal_700">#018786</color>
-    <color name="teal_200">#03DAC5</color>
-</resources>
